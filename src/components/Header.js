@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { header } from '../utils/headerNames';
 import { SiJavascript } from "react-icons/si";
 import { Link } from 'react-router-dom';
+import { IoMdClose } from 'react-icons/io';
 
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -20,6 +21,7 @@ const Header = () => {
                 <li className='h-full md:h-full flex items-center justify-center px-4 cursor-pointer font-medium text-gray-300 border-[1px] md:border-r-[1px] border-[#262526] col-span-1 md:col-auto w-full'>
                   <SiJavascript className='min-w-7 mr-1  text-yellow-500' />
                   <span className='text-sm font-medium md:text-lg 2xl:text-lg'>{item.name}</span>
+                  <IoMdClose className='ml-3 text-2xl'/>
                 </li>
               </Link>
             ))
