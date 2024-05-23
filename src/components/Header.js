@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div className='bg-[#424042] w-full md:w-full min-h-16 text-center flex'>
-      <div className="overflow-x-auto flex-grow flex items-center">
+      <div className="overflow-x-auto flex-grow flex items-center no-scrollbar no-scrollbar">
         <ul className='flex h-full xl:flex-row'>
           {
             header.map((item, index) => (
